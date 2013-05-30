@@ -1,0 +1,5 @@
+<link rel="icon" href="#" type="image/x-icon">
+<link rel="shortcut icon" href="#" type="image/x-icon">
+
+<!-- replace the # with the location of .ico file -->
+<!-- on a real site it should be an absolute path to the root of the site -->

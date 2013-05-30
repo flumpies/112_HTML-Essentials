@@ -1,0 +1,51 @@
+Return-Path: <tjp@tjpa.com>
+Delivery-Date: Fri, 17 May 2013 20:36:53 -0400
+Received: from mout.perfora.net (mout.perfora.net [74.208.4.195])
+	by mx.perfora.net (node=mxus4) with ESMTP (Nemesis)
+	id 0Mb8Md-1Uwwu748kd-00JsGY ; Fri, 17 May 2013 20:36:53 -0400
+Received: from [192.168.1.165] (pool-96-231-224-66.washdc.east.verizon.net [96.231.224.66])
+	by mrelay.perfora.net (node=mrus0) with ESMTP (Nemesis)
+	id 0LsSQK-1UWioz1rfk-011wV2; Fri, 17 May 2013 20:36:51 -0400
+From: tjp <tjp@tjpa.com>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Subject: html5 - <meta charset='utf-8'> vs <meta http-equiv='Content-Type'> - Stack Overflow
+Date: Fri, 17 May 2013 20:36:48 -0400
+Message-Id: <D0191DB8-4DDA-4975-B31D-7AFA282DB2A4@tjpa.com>
+To: tammyw@tjpa.com,
+ Chris Majerik <chrism@tjpa.com>
+Mime-Version: 1.0 (Apple Message framework v1085)
+X-Mailer: Apple Mail (2.1085)
+X-Provags-ID: V02:K0:wrFhlaa5sV8SKzr62bx9J8/II4CTWNJVWNjWlpItfOI
+ kAhbwfHmaXnJjwqR8GTmhPzJBStNBdMkfZkNoSSKLS8cI+C4La
+ ekzpPyFHBedFO5nAmDeAB4XHNrNSknPdCywguFPYLdoXdmHuBH
+ Sth2dMUdj92AJ+bRTReui3vzub/570LJCYCMtOy0IQtjA9oq/C
+ NVLM1WvHNM4P5Hun54/FajCG0DmM9ZnurOn8buUIO8UqdTL3YB
+ 2AKckFbiFo2O27QaMoK7vla1AnZUVJ6Rpa5La5QJYin6qrWwYI
+ 1hmLurnWBcGX99q1W10XtOhGI0kVAgUgtO0eFwk6cnYPrdAflI
+ 2ystqG/Z2764KB3sj8dJG3KiRbT8hNkpivz5lIL17
+X-UI-Junk: AutoMaybeJunk +0 ();
+  V01:idXYrRRH:l7lq5j51Btbl8EkIexiixPfmuUmytFk7P1GzoOG2ObohorTL0YS
+  8ZKIGWEK+CObcLfN7qtBcf2C03XEJyRRcFgZWNnl0LwPRo0J5+6x+KQjkjzIe9DR
+  JvL01dZepaUlbMHNI8taf0CH/wn8VguvvyyzdGwZ66Tho7ibZx3qn7CpRFbCMNOd
+  9EsQeduc0+2+2VOIcwOpcUQjXE71ccF6WURQ5BzUGLwW885KwSBbdLck=
+Envelope-To: chrism@tjpa.com
+
+Interesting stuff here about coding HTML with a Unicode character set =
+UTF-8 (which we all should be doing by now)
+
+How should we incorporate this in classes?
+
+
+=
+http://stackoverflow.com/questions/4696499/meta-charset-utf-8-vs-meta-http=
+-equiv-content-type
+
+Also you should not use HTML entities in UTF-8. Characters like the =
+copyright symbol should be typed directly. The only entities you should =
+use are for the 5 reserved markup characters: less than, greater than, =
+ampersand, prime, double prime.
+
+Not using HTML entities is a big deal. We should test this.
+
+I added this to the to-do list=
